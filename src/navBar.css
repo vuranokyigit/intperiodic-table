@@ -1,0 +1,31 @@
+nav{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+nav .container{
+    height: 50px !important;
+}
+nav #navbar_left .navbar-left-button{
+    background-color: #58586B;
+    border: none;
+    height: 35px;
+    width: 50%;
+    float: left;
+}
+nav #navbar_left .navbar-left-button:hover{
+    transform: scale(1.5, 1.5);
+    z-index: 1;
+}
+
+nav #navbar_right .navbar-right-button{
+    background-color: #58586B;
+    border: none;
+    height: 35px;
+    width: 50%;
+    float: right;
+}
+nav #navbar_right .navbar-right-button:hover{
+    transform: scale(1.5, 1.5);
+    z-index: 1;
+}

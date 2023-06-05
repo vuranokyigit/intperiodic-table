@@ -7,6 +7,115 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* ##PERIODIC TABLE AREA RESPONSIVE DESIGN */
+@media screen and (max-width:1294px) {
+  .periodic-table{
+    display: grid;
+    grid-template-columns: repeat(18, 60px);
+    position: absolute;
+    grid-template-rows: repeat(10, 60px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  @media screen and (max-width:1240px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 55px);
+      position: absolute;
+      grid-template-rows: repeat(10, 55px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+  @media screen and (max-width:1125px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 50px);
+      position: absolute;
+      grid-template-rows: repeat(10, 50px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+  @media screen and (max-width:971px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 45px);
+      position: absolute;
+      grid-template-rows: repeat(10, 45px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+   @media screen and (max-width:858px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 40px);
+      position: absolute;
+      grid-template-rows: repeat(10, 40px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  } 
+  @media screen and (max-width:760px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 35px);
+      position: absolute;
+      grid-template-rows: repeat(10, 35px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+  @media screen and (max-width:660px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 30px);
+      position: absolute;
+      grid-template-rows: repeat(10, 30px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+  @media screen and (max-width:560px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 25px);
+      position: absolute;
+      grid-template-rows: repeat(10, 25px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+  @media screen and (max-width:460px) {
+    .periodic-table{
+      display: grid;
+      grid-template-columns: repeat(18, 20px);
+      position: absolute;
+      grid-template-rows: repeat(10, 20px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+  }
+}
 
 .intelement {
     background: white;
@@ -28,10 +137,57 @@
     top: 5px;
     left: 5px;
   }
-  
+  /* ##ELEMENT NUMBER RESPONSIVE DESIGN */
+  @media screen and (max-width:660px) {
+    .intelement .number {
+    font-size: 0px !important;
+      
+    }
+    
+  }
+  @media screen and (max-width:859px) {
+    .intelement .number {
+    font-size: 4px !important;
+      
+    }
+    
+  }
   .intelement .name {
     font-size: 8px;
     position: absolute;
     bottom: 5px;
     left: 5px;
   }
+  /* ##ELEMENT NAME RESPONSIVE DESIGN */
+
+  
+    @media screen and (max-width:1125px) {
+      .intelement .name {
+      font-size: 6px !important;
+        
+      }
+      
+    }
+    @media screen and (max-width:859px) {
+      .intelement .name {
+      font-size: 4px !important;
+        
+      }
+      
+    }
+    @media screen and (max-width:660px) {
+      .intelement .name {
+      font-size: 0px !important;
+        
+      }
+    }
+  /* ##ELEMENT SYMBOL RESPONSIVE DESIGN */
+
+  @media screen and (max-width:660px) {
+    .intelement strong {
+    font-size: 8px !important;
+      
+    }
+    
+  }
+  
