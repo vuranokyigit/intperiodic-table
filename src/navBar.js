@@ -1,37 +1,76 @@
-import React from "react";
-import "./navBar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUser } from "@fortawesome/free-solid-svg-icons";
-import { faGamepad } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from 'react';
+import './navBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faGamepad } from '@fortawesome/free-solid-svg-icons';
 
+const NavBar = () => {
+    const [isLeftDivOpen, setLeftDivOpen] = useState(false);
+    const [isRightDivOpen, setRightDivOpen] = useState(false);
+    const [isIconVisible, setIsIconVisible] = useState(true);
 
+    const handleLeftButtonClick = () => {
+        setLeftDivOpen(!isLeftDivOpen);
+        if (isLeftDivOpen) {
+            setIsIconVisible(true);
+        } else {
+            setIsIconVisible(false);
+        }
 
-export const NavBar = () => {
+    };
+
+    const handleRightButtonClick = () => {
+        setRightDivOpen(!isRightDivOpen);
+        if (isRightDivOpen) {
+            setIsIconVisible(true);
+        } else {
+            setIsIconVisible(false);
+        }
+    };
+
     return (
         <nav id="navbar">
-        <div class="container">
-            <div class="row">
-                <div id="navbar_left" class="col-6">
-                    <button className="navbar-left-button">
-                    <FontAwesomeIcon icon={faUser} spin size="lg" style={{color: "#e6e9ef",}} />
-                    </button>
-                </div>
-                <div id="navbar_right" class="col-6">
-                <button className="navbar-right-button">
-                <FontAwesomeIcon icon={faGamepad} spin spinReverse size="lg" style={{color: "#e6e9ef",}} />
-                </button>
+            <div className="container">
+                <div className="row">
+                    <div id="navbar_left" >
+                        <button className="navbar-left-button" onClick={handleLeftButtonClick}>
+                            {isIconVisible && (
+                                <FontAwesomeIcon icon={faUser} spin size="lg" style={{ color: '#e6e9ef' }} />
+                            )}
+                            <div className={`col-6 ${isLeftDivOpen ? 'open' : ''}`}>
+                                {isLeftDivOpen && (<div className="left-div">
+                                    <ul>
+                                        <li id='loginTag'> LOGIN </li>
+                                        <li id='registerTag'> REGISTER </li>
+                                    </ul>
+                                </div>)}
+                            </div>
+                        </button>
 
+
+                    </div>
+                    <div id="navbar_right" >
+                        <button className="navbar-right-button" onClick={handleRightButtonClick}>
+                            {isIconVisible && (
+                                <FontAwesomeIcon icon={faGamepad} spin size="lg" style={{ color: '#e6e9ef' }} />
+                            )}
+                            <div className={`col-6 ${isRightDivOpen ? 'open' : ''}`}>
+                                {isRightDivOpen && <div className="right-div">
+                                    <ul>
+                                        <li id='quizzesTag'> 
+                                            QUIZZES
+                                         </li>
+                                        
+                                    </ul>
+                                </div>}
+                            </div>
+                        </button>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    )
-}
-
-
-
-
-
-
+        </nav>
+    );
+};
 
 export default NavBar;

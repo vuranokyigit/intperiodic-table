@@ -13,8 +13,19 @@ nav #navbar_left .navbar-left-button{
     width: 50%;
     float: left;
 }
+nav .left-div{
+    background-color: #58586B;
+    border: none;
+    height: 60px;
+    width: 105%;
+    float: left;
+}
+nav #navbar_left .navbar-left-button ul li{
+    list-style: none;
+    cursor: pointer;
+}
 nav #navbar_left .navbar-left-button:hover{
-    transform: scale(1.5, 1.5);
+    transform: scale(1.25, 1.25);
     z-index: 1;
 }
 
@@ -25,7 +36,19 @@ nav #navbar_right .navbar-right-button{
     width: 50%;
     float: right;
 }
+nav .right-div{
+    background-color: #58586B;
+    border: none;
+    height: 60px;
+    width: 105%;
+    float: right;
+
+}
+nav #navbar_right .navbar-right-button ul li{
+    list-style: none !important;
+    cursor: pointer;
+}
 nav #navbar_right .navbar-right-button:hover{
-    transform: scale(1.5, 1.5);
+    transform: scale(1.25, 1.25);
     z-index: 1;
 }
