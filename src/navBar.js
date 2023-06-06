@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faGamepad, faUserSecret, faFlaskVial } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
     const [isLeftDivOpen, setLeftDivOpen] = useState(false);
@@ -38,9 +38,9 @@ const NavBar = () => {
                             )}
                             <div className={`col-6 ${isLeftDivOpen ? 'open' : ''}`}>
                                 {isLeftDivOpen && (<div className="left-div">
-                                    <ul>
-                                        <li id='loginTag'> LOGIN </li>
-                                        <li id='registerTag'> REGISTER </li>
+                                    <ul id='left-toggle'>
+                                        <li id='loginToggle'> <FontAwesomeIcon icon={faUser} size='lg' /> LOGIN </li>
+                                        <li id='registerToggle'><FontAwesomeIcon icon={faUserSecret} size='lg'/>  REGISTER </li>
                                     </ul>
                                 </div>)}
                             </div>
@@ -55,9 +55,8 @@ const NavBar = () => {
                             )}
                             <div className={`col-6 ${isRightDivOpen ? 'open' : ''}`}>
                                 {isRightDivOpen && <div className="right-div">
-                                    <ul>
-                                        <li id='quizzesTag'> 
-                                            QUIZZES
+                                    <ul id='right-toggle'>
+                                        <li id='quizzesToggle'><FontAwesomeIcon icon={faFlaskVial} size='lg'/> QUIZZES
                                          </li>
                                         
                                     </ul>

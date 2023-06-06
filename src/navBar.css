@@ -20,6 +20,11 @@ nav .left-div{
     width: 105%;
     float: left;
 }
+nav #left-toggle{
+    display: flex;
+    justify-content: space-evenly;
+    color: #e6e9ef;
+}
 nav #navbar_left .navbar-left-button ul li{
     list-style: none;
     cursor: pointer;
@@ -27,6 +32,12 @@ nav #navbar_left .navbar-left-button ul li{
 nav #navbar_left .navbar-left-button:hover{
     transform: scale(1.25, 1.25);
     z-index: 1;
+}
+nav #left-toggle :hover{
+    transform: scale(1.25, 1.25);
+    z-index: 1;
+    color: #EC674E !important;
+    
 }
 
 nav #navbar_right .navbar-right-button{
@@ -44,6 +55,11 @@ nav .right-div{
     float: right;
 
 }
+nav #right-toggle{
+    align-items: center;
+    color: #e6e9ef;
+}
+
 nav #navbar_right .navbar-right-button ul li{
     list-style: none !important;
     cursor: pointer;
@@ -52,3 +68,10 @@ nav #navbar_right .navbar-right-button:hover{
     transform: scale(1.25, 1.25);
     z-index: 1;
 }
+nav #right-toggle #quizzesToggle:hover{
+    transform: scale(1.25, 1.25);
+    z-index: 1;
+    color: #EC674E !important;
+    
+}
+   

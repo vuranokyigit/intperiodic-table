@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css"
-import IntPeriodicTable from "./intPeriodicTable";
 import Navbar from "./navBar";
+import IntPeriodicTable from "./intPeriodicTable";
+
 
 //##TITLE & DESCRIPTION
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
             <Navbar />
             <h1>PERIODIC TABLE</h1>
             <IntPeriodicTable />
+            
         </div>
     );
 };
