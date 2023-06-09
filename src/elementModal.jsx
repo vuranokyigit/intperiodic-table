@@ -16,10 +16,18 @@ const ElementModal = ({ intelement, onClose }) => {
         <button className="close-button" onClick={onClose}>
         <FontAwesomeIcon icon={faXmark} />
         </button>
-        <h2>{elementData.name}</h2>
+        <h2>{elementData.name}({elementData.symbol})</h2>
         <p>Atomic Number: {elementData.number}</p>
-        <p>Symbol: {elementData.symbol}</p>
-        {/* Diğer bilgilerin devami */}
+        <p>Period: {elementData.period}</p>
+        <p>Category: {elementData.category}</p>
+        <p>Electron Configuration:{elementData.electron_configuration}</p>
+        <p>Phase:{elementData.phase}</p>
+        <p>Appearance:{elementData.appearance}</p>
+        <p>Discovered By:{elementData.discovered_by}</p>
+        <p>Summary:{elementData.summary}</p>
+        
+        
+        
       </div>
     </div>
   );

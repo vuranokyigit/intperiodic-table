@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import './navBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faGamepad, faUserSecret, faFlaskVial } from '@fortawesome/free-solid-svg-icons';
+import './loginRegisterSection';
 
 const NavBar = () => {
     const [isLeftDivOpen, setLeftDivOpen] = useState(false);
     const [isRightDivOpen, setRightDivOpen] = useState(false);
     const [isIconVisible, setIsIconVisible] = useState(true);
+    const [isLoginToggleOpen, setIsLoginToggleOpen] = useState(false);
+    const [isRegisterToggleOpen, setIsRegisterToggleOpen] = useState(false);
+    const [isGameToggleOpen, setIsGameToggleOpen] = useState(false);
 
     const handleLeftButtonClick = () => {
         setLeftDivOpen(!isLeftDivOpen);
@@ -27,6 +31,16 @@ const NavBar = () => {
         }
     };
 
+    const handleLoginToggleOpen = () => {
+        setIsLoginToggleOpen(!isLoginToggleOpen);
+        };
+    const handleRegisterToggleOpen = () => {
+        setIsRegisterToggleOpen(!isRegisterToggleOpen);
+        };
+    const handleGameToggleOpen = () => {
+        setIsGameToggleOpen(!isGameToggleOpen);
+        };
+
     return (
         <nav id="navbar">
             <div className="container">
@@ -39,8 +53,9 @@ const NavBar = () => {
                             <div className={`col-6 ${isLeftDivOpen ? 'open' : ''}`}>
                                 {isLeftDivOpen && (<div className="left-div">
                                     <ul id='left-toggle'>
-                                        <li id='loginToggle'> <FontAwesomeIcon icon={faUser} size='lg' /> LOGIN </li>
-                                        <li id='registerToggle'><FontAwesomeIcon icon={faUserSecret} size='lg'/>  REGISTER </li>
+                                        <li id='loginToggle' onClick={handleLoginToggleOpen}> <FontAwesomeIcon icon={faUser} size='lg' /> LOGIN </li>
+                                        
+                                        <li id='registerToggle' onClick={handleRegisterToggleOpen}><FontAwesomeIcon icon={faUserSecret} size='lg'/>  REGISTER </li>
                                     </ul>
                                 </div>)}
                             </div>
@@ -56,7 +71,7 @@ const NavBar = () => {
                             <div className={`col-6 ${isRightDivOpen ? 'open' : ''}`}>
                                 {isRightDivOpen && <div className="right-div">
                                     <ul id='right-toggle'>
-                                        <li id='quizzesToggle'><FontAwesomeIcon icon={faFlaskVial} size='lg'/> QUIZZES
+                                        <li id='quizzesToggle' onClick={handleGameToggleOpen}><FontAwesomeIcon icon={faFlaskVial} size='lg'/> QUIZZES
                                          </li>
                                         
                                     </ul>
@@ -69,6 +84,7 @@ const NavBar = () => {
                 </div>
             </div>
         </nav>
+        
     );
 };
 
