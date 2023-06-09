@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css"
-import Navbar from "./navBar";
-import IntPeriodicTable from "./intPeriodicTable";
+import Navbar from "./Navbar/navBar";
+import IntPeriodicTable from "./Main/intPeriodicTable";
 
 
 //##TITLE & DESCRIPTION

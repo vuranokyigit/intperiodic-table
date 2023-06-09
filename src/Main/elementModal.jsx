@@ -1,6 +1,6 @@
 import React from "react";
 import "./elementModal.css";
-import data from "./intPeriodicTableJSON.json";
+import data from "../intPeriodicTableJSON.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 

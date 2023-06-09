@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "./intPeriodicTableJSON.json";
+import data from "../intPeriodicTableJSON.json";
 import "./intPeriodicTable.css";
 import ElementModal from "./elementModal";
 
