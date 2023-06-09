@@ -1,5 +1,20 @@
-.App{
- text-align: center;
+.App {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.body-ui{
+  flex: 1;
 }
+
+.App.dark {
+    background-color: #000;
+    color: #fff;
+  }
+  
 
 

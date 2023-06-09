@@ -3,6 +3,7 @@ import data from "../intPeriodicTableJSON.json";
 import "./intPeriodicTable.css";
 import ElementModal from "./elementModal";
 
+
 const colorMapElements = {
     "noble gas": "#FFBC42",
     "alkaline earth metal": "#EC674E",
@@ -16,7 +17,7 @@ const colorMapElements = {
 
 const IntPeriodicTable = () => {
     const [selectedElement, setSelectedElement] = useState(null);
-
+    
     const handleElementClick = (intelement) => {
         setSelectedElement(intelement);
     };
@@ -24,6 +25,8 @@ const IntPeriodicTable = () => {
     const handleCloseModal = () => {
         setSelectedElement(null);
     };
+    
+    
 
     return (
         <div className="periodic-table">
@@ -36,6 +39,7 @@ const IntPeriodicTable = () => {
                         gridRow: intelement.ypos,
                         backgroundColor: colorMapElements[intelement.category],
                     }}
+                    
                     onClick={() => handleElementClick(intelement)}
                 >
                     <strong>{intelement.symbol}</strong>
@@ -49,6 +53,7 @@ const IntPeriodicTable = () => {
                     onClose={handleCloseModal}
                 />
             )}
+           
         </div>
     );
 };
