@@ -1,118 +1,69 @@
 import React from 'react';
 import './registerMan.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
 const RegisterMan = (props) => {
     return (
         <div className="offcanvas-header">
-            <div className='box'>
-                <h5 className="offcanvas-title" id="offCanvasRegisterIdLabel">
-                    REGISTER
-                </h5>
-                <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                    onClick={props.handleClose}
-                />
+            <form id='manipulatinSpanTagsLoginForm' action="#" method='get' autoComplete='on'>
                 <div className="offcanvas-body">
                     <div>
-                        <div className="row">
-                            <div className="col-md-6 mb-4">
-                                <div className="form-outline">
-                                    <label className="form-label" htmlFor="firstName">
-                                        First Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="firstName"
-                                        className="form-control form-control-lg"
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <div className="form-outline">
-                                    <label className="form-label" htmlFor="lastName">
-                                        Middle Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="lastName"
-                                        className="form-control form-control-lg"
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-4">
-                                <div className="form-outline">
-                                    <label className="form-label" htmlFor="lastName">
-                                        Last Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="lastName"
-                                        className="form-control form-control-lg"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-6 mb-4 pb-2">
-                                <div className="form-outline">
-                                    <label className="form-label" htmlFor="emailAddress">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="emailAddress"
-                                        className="form-control form-control-lg"
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-4 pb-2">
-                                <div className="form-outline">
-                                    <label className="form-label" htmlFor="passwd_data">
-                                        Password
-                                    </label>
-                                    <input
-                                        type="password"
-                                        id="passwd"
-                                        className="form-control form-control-lg"
-                                        required=""
-                                    />
-                                    <label id="modal-login-warning" className="text-warning">
-                                        <input
-                                            id="modal-login-show-password"
-                                            type="checkbox"
-                                            onclick="myFunctionRegisterShowPasswd()"
-                                        />{" "}
-                                        Show Password
-                                    </label>
-                                </div>
-                            </div>
-                            <div className="col-md-6 mb-4 pb-2">
-                                <div className="form-outline">
-                                    <label className="form-label" htmlFor="phoneNumber">
-                                        Phone Number
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        id="phoneNumber"
-                                        className="form-control form-control-lg"
-                                    />
-                                </div>
-                            </div>
-                            
-                        </div>
+                        <>
+                            <div className="login-box">
+                                <button
+                                    type="button"
+                                    id='closeRegisterButton'
+                                    className="btn-close"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                    onClick={props.handleClose}
+                                ><FontAwesomeIcon id='closeIcon' icon={faXmark} style={{color: "#03e9f4",}} /></button>
+                                <h2>Register</h2>
+                                <form>
+                                    <div className="user-box">
+                                        <input type="text" name="" required="" />
+                                        <label>Name</label>
+                                    </div>
+                                    <div className="user-box">
+                                        <input type="text" name="" required="" />
+                                        <label>Surname</label>
+                                    </div>
+                                    <div className="user-box">
+                                        <input type="text" name="" required="" />
+                                        <label>E-Mail</label>
+                                    </div>
+                                    <div className="user-box">
+                                        <input type="password" name="" required="" />
+                                        <label>Password</label>
+                                    </div>
+                                    <div className="user-box">
+                                        <input type="text" placeholder='dd/mm/yyyy' name="" required="" />
+                                        <label>Birthday</label>
+                                    </div>
 
+                                    <a href='#'>
+                                        <span />
+                                        <span />
+                                        <span />
+                                        <span />
+                                        Save
+                                    </a>
+                                </form>
+                            </div>
 
+                        </>
                     </div>
                     {props.content}
                 </div>
-            </div>
+            </form>
+
 
         </div>
+
 
 
     )
