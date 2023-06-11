@@ -16,7 +16,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="copyright">
-                                <p>&copy; <span id="footerDate">{year}</span> All Rights Reserved by Fikri Yigit Vuranok</p>
+                                <p>&copy; 2023 - <span id="footerDate">{year}</span> All Rights Reserved by Fikri Yigit Vuranok</p>
                             </div>
                         </div>
                     </div>

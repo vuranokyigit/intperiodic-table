@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faGamepad, faUserSecret, faFlaskVial } from '@fortawesome/free-solid-svg-icons';
 import ManipulatingSpanTagsLogin from './manipulatingSpanTagsLogin';
 import RegisterMan from './registerMan';
+import Quizzes from '../Navbar/Quizzes/quizzesMan';
 
 const NavBar = () => {
     const [isLeftDivOpen, setLeftDivOpen] = useState(false);
@@ -31,7 +32,7 @@ const NavBar = () => {
         }
     };
     const [isOpen, setIsOpen] = useState(false);
-    const [isOpenRegisterForm , setIsOpenRegisterForm] = useState(false);
+    const [isOpenRegisterForm, setIsOpenRegisterForm] = useState(false);
 
     const togglePopupLogin = () => {
         setIsOpen(!isOpen);
@@ -39,6 +40,10 @@ const NavBar = () => {
     const togglePopupRegister = () => {
         setIsOpenRegisterForm(!isOpenRegisterForm);
     }
+    const [isOpenGames, setOpenGames] = useState(false);
+    const toggleGames = () => {
+            setOpenGames(!isOpenGames);
+        }
 
 
 
@@ -70,14 +75,14 @@ const NavBar = () => {
                         </button>
                         {isOpen && <ManipulatingSpanTagsLogin
                             content={<>
-                               
+
                             </>}
                             handleClose={togglePopupLogin}
                         />}
 
                         {isOpenRegisterForm && <RegisterMan
                             content={<>
-                                
+
                             </>}
                             handleClose={togglePopupRegister}
                         />}
@@ -96,7 +101,7 @@ const NavBar = () => {
                             <div className={`col-6 ${isRightDivOpen ? 'open' : ''}`}>
                                 {isRightDivOpen && <div className="right-div">
                                     <ul id='right-toggle'>
-                                        <li id='quizzesToggle'><FontAwesomeIcon icon={faFlaskVial} size='lg' /> QUIZZES
+                                        <li id='quizzesToggle'><FontAwesomeIcon icon={faFlaskVial} size='lg' /><span id='gameToggleSpan' onClick={toggleGames}> QUIZZES</span> 
                                         </li>
 
 
@@ -107,6 +112,13 @@ const NavBar = () => {
 
                             </div>
                         </button>
+                        {isOpenGames && <Quizzes
+                            content={<>
+
+                            </>}
+                            handleClose={toggleGames}
+                        />}
+
 
 
                     </div>

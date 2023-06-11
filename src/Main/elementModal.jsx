@@ -5,14 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-const ElementModal = ({ intelement, onClose }) => {
+
+const ElementModal = ({ intelement, onClose, darkMode }) => {
   const elementData = data.intelements.find(
     (element) => element.name === intelement.name
   );
 
   return (
     <div className="modal-overlay">
-      <div className="modal-content">
+      <div className={`modal-content ${darkMode ? "dark" : ""}`}>
         <button className="close-button" onClick={onClose}>
         <FontAwesomeIcon icon={faXmark} />
         </button>

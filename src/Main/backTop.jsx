@@ -7,9 +7,6 @@ import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 
 
 const BackTop = ({clickToggleDark, darkMode}) => {
-
-    
-
         return (
             <div className={`backTopClass ${darkMode ? 'dark' : ''}`}>
                 <i className="fa fa-angle-up" onClick={clickToggleDark} ><FontAwesomeIcon icon={faCircleHalfStroke} /></i>

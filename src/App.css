@@ -1,21 +1,18 @@
 .App {
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #eeeeee;
-  }
-  
-.body-ui{
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.body-ui {
   flex: 1;
 }
 
 .App.dark {
-    background-color: #333;
-    color: #eeeeee;
-  }
-  
-
-
+  background-color: #333;
+  color: #eeeeee;
+}

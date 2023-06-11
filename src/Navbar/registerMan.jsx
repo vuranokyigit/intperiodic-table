@@ -9,7 +9,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 const RegisterMan = (props) => {
     return (
         <div className="offcanvas-header">
-            <form id='manipulatinSpanTagsLoginForm' action="#" method='get' autoComplete='on'>
+            <form id='registerManForm' action="#" method='get' autoComplete='on'>
                 <div className="offcanvas-body">
                     <div>
                         <>
