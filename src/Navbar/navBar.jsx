@@ -31,12 +31,13 @@ const NavBar = (props) => {
         }
     };
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpenRegisterForm , setIsOpenRegisterForm] = useState(false);
 
     const togglePopupLogin = () => {
         setIsOpen(!isOpen);
     }
     const togglePopupRegister = () => {
-        setIsOpen(!isOpen);
+        setIsOpenRegisterForm(!isOpenRegisterForm);
     }
 
 
@@ -74,7 +75,7 @@ const NavBar = (props) => {
                             handleClose={togglePopupLogin}
                         />}
 
-                        {isOpen && <RegisterMan
+                        {isOpenRegisterForm && <RegisterMan
                             content={<>
                                 
                             </>}
