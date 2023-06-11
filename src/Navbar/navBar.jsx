@@ -5,7 +5,7 @@ import { faUser, faGamepad, faUserSecret, faFlaskVial } from '@fortawesome/free-
 import ManipulatingSpanTagsLogin from './manipulatingSpanTagsLogin';
 import RegisterMan from './registerMan';
 
-const NavBar = (props) => {
+const NavBar = () => {
     const [isLeftDivOpen, setLeftDivOpen] = useState(false);
     const [isRightDivOpen, setRightDivOpen] = useState(false);
     const [isIconVisible, setIsIconVisible] = useState(true);

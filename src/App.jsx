@@ -12,10 +12,10 @@ import BackTop from "./Main/backTop";
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
-  const handleClick = () => {
+  function clickToggleDark() {
     setDarkMode(!darkMode);
-  };
-  
+  }
+
 
   return (
     <div className={`App ${darkMode ? 'dark' : ''}`} >
@@ -23,7 +23,7 @@ const App = () => {
       <div className="body-ui">
         <h1>PERIODIC TABLE</h1>
         <IntPeriodicTable />
-        <BackTop  onClick={handleClick} darkMode={darkMode} />
+        <BackTop  clickToggleDark={clickToggleDark} darkMode={darkMode} />
         <Footer />
       </div>
     </div>
