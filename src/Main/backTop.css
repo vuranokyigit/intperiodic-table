@@ -1,5 +1,5 @@
 
-.back-top {
+.backTopClass {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -14,17 +14,17 @@
     transition: background-color 0.3s ease;
   }
   
-  .back-top.dark {
+  .backTopClass.dark {
     background-color: #333;
     color: #fff;
   }
   
-  .back-top.light {
+  .backTopClass.light {
     background-color: #f2f2f2;
     color: #333;
   }
   
-  .back-top i {
+  .backTopClass i {
     font-size: 18px;
   }
   

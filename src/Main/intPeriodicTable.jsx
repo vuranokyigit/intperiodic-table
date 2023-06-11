@@ -11,8 +11,16 @@ const colorMapElements = {
     "alkali metal": "#8F2D56",
     "transition metal": "#58586B",
     "post-transition metal": "#218380",
-    lanthanide: "#4AABAF",
-    metalloid: "#73D2DE",
+    "lanthanide": "#4AABAF",
+    "metalloid": "#73D2DE",
+    "polyatomic nonmetal": "#0f47d4",
+    "actinide": "#25eef5",
+    "unknown, but predicted to be an alkali metal": "#8F2D56",
+    "unknown, probably transition metal": "#b5b5b5",
+    "unknown, probably post-transition metal": "#b5b5b5",
+    "unknown, probably metalloid": "#73d2de",
+    "unknown, predicted to be noble gas": "#FFBC42",
+
 };
 
 const IntPeriodicTable = () => {
@@ -38,6 +46,7 @@ const IntPeriodicTable = () => {
                         gridColumn: intelement.xpos,
                         gridRow: intelement.ypos,
                         backgroundColor: colorMapElements[intelement.category],
+                        cursor: "pointer",
                     }}
                     
                     onClick={() => handleElementClick(intelement)}

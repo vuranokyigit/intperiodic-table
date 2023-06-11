@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./App.css"
 import Navbar from "./Navbar/navBar";
 import IntPeriodicTable from "./Main/intPeriodicTable";
@@ -7,26 +7,28 @@ import BackTop from "./Main/backTop";
 
 
 
+
 //##TITLE & DESCRIPTION
 const App = () => {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-  const handleDarkModeToggle = () => {
+  const handleClick = () => {
     setDarkMode(!darkMode);
   };
+  
 
-    return (
-        <div className={`App ${darkMode ? "dark" : ""}`} onClick={handleDarkModeToggle}>
-            <Navbar />
-            <div className="body-ui">
-                <h1>PERIODIC TABLE</h1>
-                <IntPeriodicTable />
-                <BackTop />
-                <Footer />
-            </div>
-        </div>
-    );
+  return (
+    <div className={`App ${darkMode ? 'dark' : ''}`} >
+      <Navbar />
+      <div className="body-ui">
+        <h1>PERIODIC TABLE</h1>
+        <IntPeriodicTable />
+        <BackTop  onClick={handleClick} darkMode={darkMode} />
+        <Footer />
+      </div>
+    </div>
+  );
 };
-
 export default App;
+
 

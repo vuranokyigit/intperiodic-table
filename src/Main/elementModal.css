@@ -34,4 +34,7 @@
   p {
     margin: 10px 0;
   }
+  #categoryElement{
+    text-transform: uppercase;
+  }
   

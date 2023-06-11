@@ -19,15 +19,12 @@ const ElementModal = ({ intelement, onClose }) => {
         <h2>{elementData.name}({elementData.symbol})</h2>
         <p>Atomic Number: {elementData.number}</p>
         <p>Period: {elementData.period}</p>
-        <p>Category: {elementData.category}</p>
+        <p id="categoryElement">Category: {elementData.category}</p>
         <p>Electron Configuration:{elementData.electron_configuration}</p>
         <p>Phase:{elementData.phase}</p>
         <p>Appearance:{elementData.appearance}</p>
         <p>Discovered By:{elementData.discovered_by}</p>
         <p>Summary:{elementData.summary}</p>
-        
-        
-        
       </div>
     </div>
   );
