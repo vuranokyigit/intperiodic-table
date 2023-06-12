@@ -1,0 +1,216 @@
+{
+    "questions": [
+      {
+        "id": "1",
+        "question": "How many elements are there in the periodic table?",
+        "answer1": "There are currently 119 elements in the periodic table.",
+        "answer2": "119",
+        "difficulty": "easy"
+      },
+      {
+        "id": "2",
+        "question": "Which is the lightest element in the periodic table?",
+        "answer1": "Hydrogen is the lightest element.",
+        "answer2": "Hydrogen",
+        "difficulty": "easy"
+      },
+      {
+        "id": "3",
+        "question": "What is the symbol for the element iron in the periodic table?",
+        "answer1": "The symbol for the element iron is 'Fe'.",
+        "answer2": "Fe",
+        "difficulty": "easy"
+      },
+      {
+        "id": "4",
+        "question": "Which element has the symbol 'Au' in the periodic table?",
+        "answer1": "The element with the symbol 'Au' is gold.",
+        "answer2": "gold",
+        "difficulty": "easy"
+      },
+      {
+        "id": "5",
+        "question": "Which element has the highest atomic number in the periodic table?",
+        "answer1": "The element with the highest atomic number is Ununennium, with a value of 119.",
+        "answer2": "Ununennium",
+        "difficulty": "easy"
+      },
+      {
+        "id": "6",
+        "question": "How many elements are there in the lanthanide series of the periodic table?",
+        "answer1": "There are 15 elements in the lanthanide series.",
+        "answer2": "15",
+        "difficulty": "easy"
+      },
+      {
+        "id": "7",
+        "question": "How many elements are typically found in a group of the periodic table?",
+        "answer1": "A group typically contains 8 elements in the periodic table.",
+        "answer2": "8",
+        "difficulty": "easy"
+      },
+      {
+        "id": "8",
+        "question": "What is the term for the horizontal rows in the periodic table?",
+        "answer1": "The horizontal rows in the periodic table are called periods.",
+        "answer2": "periods",
+        "difficulty": "easy"
+      },
+      {
+        "id": "9",
+        "question": "What is the term for the vertical columns in the periodic table?",
+        "answer1": "The vertical columns in the periodic table are called groups.",
+        "answer2": "groups",
+        "difficulty": "easy"
+      },
+      {
+        "id": "10",
+        "question": "What is the symbol for helium in the periodic table?",
+        "answer1": "The symbol for helium is 'He'.",
+        "answer2": "He",
+        "difficulty": "easy"
+      },
+      {
+        "id": "11",
+        "question": "What is the atomic number of carbon?",
+        "answer1": "The atomic number of carbon is 6.",
+        "answer2": "6",
+        "difficulty": "medium"
+      },
+      {
+        "id": "12",
+        "question": "Which element is a halogen and has the symbol 'Cl'?",
+        "answer1": "Chlorine is a halogen with the symbol 'Cl'.",
+        "answer2": "Chlorine",
+        "difficulty": "medium"
+      },
+      {
+        "id": "13",
+        "question": "Which element is a noble gas and has the symbol 'Ne'?",
+        "answer1": "Neon is a noble gas with the symbol 'Ne'.",
+        "answer2": "Neon",
+        "difficulty": "medium"
+      },
+      {
+        "id": "14",
+        "question": "What is the atomic number of gold?",
+        "answer1": "The atomic number of gold is 79.",
+        "answer2": "79",
+        "difficulty": "medium"
+      },
+      {
+        "id": "15",
+        "question": "Which element is a metalloid and has the symbol 'Si'?",
+        "answer1": "Silicon is a metalloid with the symbol 'Si'.",
+        "answer2": "Silicon",
+        "difficulty": "medium"
+      },
+      {
+        "id": "16",
+        "soru": "Which element is a transition metal and has the symbol 'Cu'?",
+        "answer1": "Copper is a transition metal with the symbol 'Cu'.",
+        "answer2": "Copper",
+        "difficulty": "medium"
+      },
+      {
+        "id": "17",
+        "question": "Which element is a lanthanide and has the symbol 'Eu'?",
+        "answer1": "Europium is a lanthanide with the symbol 'Eu'.",
+        "answer2": "Europium",
+        "difficulty": "medium"
+      },
+      {
+        "id": "18",
+        "question": "What is the atomic number of uranium?",
+        "answer1": "The atomic number of uranium is 92.",
+        "answer2": "92",
+        "difficulty": "medium"
+      },
+      {
+        "id": "19",
+        "question": "Which element is a nonmetal and has the symbol 'O'?",
+        "answer1": "Oxygen is a nonmetal with the symbol 'O'.",
+        "answer2": "Oxygen",
+        "difficulty": "medium"
+      },
+      {
+        "id": "20",
+        "question": "Which element is a metal and has the symbol 'Na'?",
+        "answer1": "Sodium is a metal with the symbol 'Na'.",
+        "answer2": "Sodium",
+        "difficulty": "medium"
+      },
+      {
+        "id": "21",
+        "question": "What is the atomic number of nitrogen?",
+        "answer1": "The atomic number of nitrogen is 7.",
+        "answer2": "7",
+        "difficulty": "hard"
+      },
+      {
+        "id": "22",
+        "question": "Which element is an alkali metal and has the symbol 'K'?",
+        "answer1": "Potassium is an alkali metal with the symbol 'K'.",
+        "answer2": "Potassium",
+        "difficulty": "hard"
+      },
+      {
+        "id": "23",
+        "question": "Which element is an alkaline earth metal and has the symbol 'Ca'?",
+        "answer1": "Calcium is an alkaline earth metal with the symbol 'Ca'.",
+        "answer2": "Calcium",
+        "difficulty": "hard"
+      },
+      {
+        "id": "24",
+        "question": "What is the atomic number of phosphorus?",
+        "answer1": "The atomic number of phosphorus is 15.",
+        "answer2": "15",
+        "difficulty": "hard"
+      },
+      {
+        "id": "25",
+        "question": "Which element is a halogen and has the symbol 'Br'?",
+        "answer1": "Bromine is a halogen with the symbol 'Br'.",
+        "answer2": "Bromine",
+        "difficulty": "hard"
+      },
+      {
+        "id": "26",
+        "question": "Which element is a noble gas and has the symbol 'Kr'?",
+        "answer1": "Krypton is a noble gas with the symbol 'Kr'.",
+        "answer2": "Krypton",
+        "difficulty": "hard"
+      },
+      {
+        "id": "27",
+        "question": "What is the atomic number of mercury?",
+        "answer1": "The atomic number of mercury is 80.",
+        "answer2": "80",
+        "difficulty": "hard"
+      },
+      {
+        "id": "28",
+        "question": "Which element is a metalloid and has the symbol 'As'?",
+        "answer1": "Arsenic is a metalloid with the symbol 'As'.",
+        "answer2": "Arsenic",
+        "difficulty": "hard"
+      },
+      {
+        "id": "29",
+        "question": "Which element is a transition metal and has the symbol 'Pt'?",
+        "answer1": "Platinum is a transition metal with the symbol 'Pt'.",
+        "answer2": "Platinum",
+        "difficulty": "hard"
+      },
+      {
+        "id": "30",
+        "question": "Which element is a lanthanide and has the symbol 'Tb'?",
+        "answer1": "Terbium is a lanthanide with the symbol 'Tb'.",
+        "answer2": "Terbium",
+        "difficulty": "hard"
+      }
+      
+    ]
+  }
+  

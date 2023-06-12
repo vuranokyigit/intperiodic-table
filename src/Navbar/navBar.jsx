@@ -44,10 +44,6 @@ const NavBar = () => {
     const toggleGames = () => {
             setOpenGames(!isOpenGames);
         }
-
-
-
-
     return (
         <nav id="navbar">
             <div className="container">
@@ -87,11 +83,6 @@ const NavBar = () => {
                             handleClose={togglePopupRegister}
                         />}
 
-
-
-
-
-
                     </div>
                     <div id="navbar_right" >
                         <button className="navbar-right-button" onClick={handleRightButtonClick}>
@@ -103,13 +94,8 @@ const NavBar = () => {
                                     <ul id='right-toggle'>
                                         <li id='quizzesToggle'><FontAwesomeIcon icon={faFlaskVial} size='lg' /><span id='gameToggleSpan' onClick={toggleGames}> QUIZZES</span> 
                                         </li>
-
-
                                     </ul>
-
                                 </div>}
-
-
                             </div>
                         </button>
                         {isOpenGames && <Quizzes
