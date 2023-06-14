@@ -107,7 +107,7 @@
       },
       {
         "id": "16",
-        "soru": "Which element is a transition metal and has the symbol 'Cu'?",
+        "question": "Which element is a transition metal and has the symbol 'Cu'?",
         "answer1": "Copper is a transition metal with the symbol 'Cu'.",
         "answer2": "Copper",
         "difficulty": "medium"
