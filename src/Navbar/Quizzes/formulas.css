@@ -1,0 +1,22 @@
+
+
+#login-box-formulas{
+    width: 90%;
+}
+#formulasText{
+    color: #ffffff;
+    padding: 10px 10px 20px 10px;
+    margin: 20px 20px 20px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%; 
+    ;
+}
+#formulasText ul{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#formulasText ul li{
+    margin-bottom: 10px;
+    list-style: none;
+}

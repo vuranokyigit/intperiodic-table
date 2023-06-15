@@ -5,10 +5,12 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import ProfTest from './profTest';
 import NavBar from "../navBar";
 import MatchGame from "./matchGame";
+import Formulas from "./formulas";
 
 const QuizzesMan = (props) => {
   const [isOpenProf, setIsOpenProf] = useState(false);
   const [isOpenMatch, setIsOpenMatch] = useState(false);
+  const [isOpenFormula, setIsOpenFormula] = useState(false);
 
   const togglePopupProf = () => {
     setIsOpenProf(!isOpenProf);
@@ -16,6 +18,9 @@ const QuizzesMan = (props) => {
   const togglePopupMatch = () => {
     setIsOpenMatch(!isOpenMatch);
   }
+  const togglePopupFormula = () => {
+      setIsOpenFormula(!isOpenFormula);
+    }
 
   return (
     <>
@@ -23,6 +28,8 @@ const QuizzesMan = (props) => {
         <ProfTest content={null} handleClose={togglePopupProf} />
       ) : isOpenMatch ? (
         <MatchGame content={null} handleClose={togglePopupMatch} />
+      ) : isOpenFormula ?(
+        <Formulas content={null} handleClose={togglePopupFormula} />
       ) : (
         <div className="offcanvas-header">
           <form id='registerManForm' action="#" method='get' autoComplete='on'>
@@ -55,6 +62,15 @@ const QuizzesMan = (props) => {
                       <span />
                       <span />
                       Match Game
+                    </a>
+                  </div>
+                  <div id="form">
+                    <a href='#' onClick={togglePopupFormula}>
+                      <span />
+                      <span />
+                      <span />
+                      <span />
+                      Formulas
                     </a>
                   </div>
                 </div>

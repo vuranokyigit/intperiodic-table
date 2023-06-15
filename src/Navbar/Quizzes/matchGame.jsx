@@ -105,6 +105,7 @@ const MatchGame = (props) => {
       setSelectedElement(null);
       setMatchedElements([]);
       setScore(0);
+      onClickReset();
     };
   
     return (

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import data from "../intPeriodicTableJSON.json";
 import "./intPeriodicTable.css";
 import ElementModal from "./elementModal";
-
-
 const colorMapElements = {
     "noble gas": "#FFBC42",
     "alkaline earth metal": "#EC674E",
@@ -20,22 +18,15 @@ const colorMapElements = {
     "unknown, probably post-transition metal": "#b5b5b5",
     "unknown, probably metalloid": "#73d2de",
     "unknown, predicted to be noble gas": "#FFBC42",
-
 };
-
 const IntPeriodicTable = () => {
     const [selectedElement, setSelectedElement] = useState(null);
-    
     const handleElementClick = (intelement) => {
         setSelectedElement(intelement);
     };
-
     const handleCloseModal = () => {
         setSelectedElement(null);
     };
-    
-    
-
     return (
         <div className="periodic-table">
             {data.intelements.map((intelement) => (
@@ -47,8 +38,7 @@ const IntPeriodicTable = () => {
                         gridRow: intelement.ypos,
                         backgroundColor: colorMapElements[intelement.category],
                         cursor: "pointer",
-                    }}
-                    
+                    }}                   
                     onClick={() => handleElementClick(intelement)}
                 >
                     <strong>{intelement.symbol}</strong>
@@ -61,10 +51,8 @@ const IntPeriodicTable = () => {
                     intelement={selectedElement}
                     onClose={handleCloseModal}
                 />
-            )}
-           
+            )}       
         </div>
     );
 };
-
 export default IntPeriodicTable;

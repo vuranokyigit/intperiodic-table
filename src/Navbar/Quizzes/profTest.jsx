@@ -67,8 +67,8 @@ const Quizzes = (props) => {
     //"Try Again" butonuna tıklama olayını yakalama //bu kismi ayaga kaldir//
     function handleTryAgain() {
         // Seçilen soruları sıfırlama
-        setSelectedQuestions([])
-        setCurrentQuestionIndex(0)
+        setSelectedQuestions([]);
+        setCurrentQuestionIndex(0);
         for (let i = 0; i < 2; i++) {
             const randomIndex = Math.floor(Math.random() * easyQuestions.length);
             setSelectedQuestions([...selectedQuestions,easyQuestions[randomIndex]]) 
@@ -166,7 +166,7 @@ const FinishQuiz = (props) => {
             <form>
                 <p>Questions: {selectedQuestions.length}</p>
                 <p>Correct Answers: {correctAnswersCount}</p>
-                <p>Wrong Answers: {wrongAnswersCount}</p>
+                <p>Wrong & Empty Answers: {wrongAnswersCount}</p>
                 <a href="#">
                     Try Again <FontAwesomeIcon icon={faForward} onClick={handleTryAgain} />
                 </a>
