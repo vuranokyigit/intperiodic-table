@@ -1,0 +1,40 @@
+#matchGame_box form a,div {
+    cursor: pointer;
+}
+#timerCount-area{
+    font-size: medium !important;
+}
+
+.element-container{
+    color: #f2f2f2;
+}
+
+.dropzone {
+    width: 50%;
+    height: 100px;
+    position: relative;
+    background-color: #f2f2f2;
+    border: 2px dashed #999999;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #999999;
+    cursor: pointer;
+  }
+  
+  .dropzone.active {
+    background-color: #03e9f4;
+    border-color: #03e9f4;
+    color: #ffffff;
+  }
+  .dropZone-area{
+    justify-content: space-evenly;
+    display: flex;
+    margin: 5px;
+  }
+  .dropZone-area .dropzone{
+    color: #3f4444;
+  }
