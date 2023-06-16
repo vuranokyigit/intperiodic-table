@@ -1,70 +1,76 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Interactive Periodic Table
 
-## Available Scripts
+# Abstract
 
-In the project directory, you can run:
+I know that each element of the periodic table has its own fingerprint. I aimed to develop this project, taking into account the software competence in the field of chemistry and technology. This program, which is intended for the use of university, high school students and even every person who knows how to read and write, aims to teach the periodic table, which is the basis of chemistry, in the form of a game to anyone who is interested. This project was developed with javascript based React.js library.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Properties
 
-### `npm test`
+- Light/Dark Mode
+- Login & Register Section
+- Element Properties Screen
+- Some Chemical Formulas 
+- Interactive Tests 
+- Drag & Drop Game 
+- Supportin All Platform
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  
+## Used Technologies
 
-### `npm run build`
+**Client:** React, Redux, Hooks, CSS, Bootstrap5
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Server:** Node 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Data:** JSON (Postman)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+## Installation
 
-### `npm run eject`
+Open your TERMINAL 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### check your version node
+```bash
+  node --v 
+``` 
+if you need to install node
+https://nodejs.org/en/download
+### install
+```bash
+  npm install my-project
+  cd my-project
+```
+### run
+```bash
+  npm run start  
+```
+### start
+```bash
+  node start 
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  
+## ScreenShots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/f38xll5.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/eov0x7h.png)
 
-## Learn More
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/ed3hdmw.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/gw3doco.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/mm79mdh.png)
 
-### Code Splitting
+![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/ai3g918.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## VIDEO
 
-### Analyzing the Bundle Size
+https://www.veed.io/view/c729b3da-93b4-4b22-8f4f-f63f64a938a5?sharingWidget=true&panel=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
